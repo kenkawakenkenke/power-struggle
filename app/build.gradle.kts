@@ -15,6 +15,28 @@ android {
         versionName = "0.1"
     }
 
+    // Release signing reads POWER_STRUGGLE_* from ~/.gradle/gradle.properties. Without them,
+    // assembleRelease still works but produces an unsigned APK.
+    val storeFilePath = providers.gradleProperty("POWER_STRUGGLE_STORE_FILE").orNull
+    signingConfigs {
+        if (storeFilePath != null) {
+            create("release") {
+                storeFile = file(storeFilePath)
+                storePassword = providers.gradleProperty("POWER_STRUGGLE_STORE_PASSWORD").get()
+                keyAlias = providers.gradleProperty("POWER_STRUGGLE_KEY_ALIAS").get()
+                keyPassword = providers.gradleProperty("POWER_STRUGGLE_KEY_PASSWORD").get()
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            // Keep R8 off: Shizuku starts ShellService by class name.
+            isMinifyEnabled = false
+            signingConfig = signingConfigs.findByName("release")
+        }
+    }
+
     buildFeatures {
         compose = true
         aidl = true
