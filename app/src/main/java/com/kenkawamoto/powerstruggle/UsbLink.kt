@@ -16,7 +16,7 @@ import kotlin.concurrent.thread
 
 private const val TAG = "PowerStruggle"
 
-// Android Open Accessory identity. The player app's accessory_filter.xml matches these.
+// Android Open Accessory identity. accessory_filter.xml matches these on the player phone.
 const val ACCESSORY_MANUFACTURER = "Power Struggle"
 const val ACCESSORY_MODEL = "Referee"
 // Offered to the other phone when it does not have the app installed.

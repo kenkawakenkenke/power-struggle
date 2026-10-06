@@ -6,7 +6,13 @@
 
 2 台のスマホを USB-C ケーブルでつないで連打。勝っている側が本当に充電され、負けている側のバッテリーは本当に減っていきます。「2 人ともバッテリー残り 5%、このままでは 2 人とも家までもたない。でもどちらかが相手の電池をもらえば 1 人は助かる」という状況のためのアプリです。
 
-📖 プロジェクトページ: **[kenkawamoto.com/projects/power-struggle](https://kenkawamoto.com/projects/power-struggle)**
+📖 プロジェクトページ: **[kenkawamoto.com/ja/projects/power-struggle](https://kenkawamoto.com/ja/projects/power-struggle)**
+
+<p align="center">
+  <a href="https://kenkawamoto.com/ja/projects/power-struggle"><img src="docs/gameplay.gif" width="560" alt="ケーブルでつないだ 2 台のスマホを 2 人が連打し、充電中（緑）と放電中（オレンジ）が入れ替わる様子"></a>
+  <br>
+  <sub>▶ <a href="https://kenkawamoto.com/ja/projects/power-struggle">動画をすべて見る</a></sub>
+</p>
 
 <p align="center">
   <img src="docs/two-phone-charging.png" width="260" alt="2 台モード: このスマホが勝っていて、ケーブルからエネルギーが流れ込み充電中">

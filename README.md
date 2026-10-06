@@ -8,7 +8,11 @@ Connect two phones with a USB-C cable and tap. Whoever is winning actually gets 
 
 📖 Project page: **[kenkawamoto.com/projects/power-struggle](https://kenkawamoto.com/projects/power-struggle)**
 
-<!-- TODO(ken): drag the gameplay video in here via the GitHub web editor. -->
+<p align="center">
+  <a href="https://kenkawamoto.com/projects/power-struggle"><img src="docs/gameplay.gif" width="560" alt="Two players tapping on two phones joined by a cable; the phones flip between charging (green) and draining (orange)"></a>
+  <br>
+  <sub>▶ <a href="https://kenkawamoto.com/projects/power-struggle">Watch the full video</a></sub>
+</p>
 
 <p align="center">
   <img src="docs/two-phone-charging.png" width="260" alt="Two-phone mode: this phone is winning and charging, with energy flowing in from the cable">
